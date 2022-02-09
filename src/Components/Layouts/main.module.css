@@ -1,0 +1,54 @@
+.main-section{
+    margin-top: 30px;
+}
+
+main h1{
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #070D27;
+}
+
+main p{
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+
+button{
+    background-color: #3455DB !important;
+    border: none;
+    box-shadow: 0px 16px 40px rgba(52, 85, 219, 0.2);
+}
+
+.project-one{
+    margin-top: 50px;
+}
+
+section {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+section h3{
+    font-size: 24px;
+    letter-spacing: 1.4px;
+}
+
+section h5{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 12px;
+}
+img{
+    max-width: 100%;
+    margin-bottom: 20px;
+}
+
+.link{
+    margin-top: 30px;
+    display: block;
+    color: #3455DB !important;
+    text-decoration: underline;
+}

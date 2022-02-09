@@ -1,0 +1,19 @@
+.menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  min-height: 80vh;
+  margin-top: 50px;
+}
+
+/* h2 {
+  margin-bottom: 50px;
+  background-color: orange;
+  display: block;
+} */
+
+.link {
+  margin-bottom: 50px;
+  display: block;
+}
