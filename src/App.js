@@ -10,8 +10,9 @@ import Homepage from './Pages/Homepage'
 function App() {
   return (
     <BrowserRouter>
-      <div className="container">
-        <Header handler={'dave'} />
+      <div className="landing_page">
+        <> </>
+
         <Routes>
           <Route path="/" element={<Homepage />} />
           <Route path="/about" element={<About />} />
