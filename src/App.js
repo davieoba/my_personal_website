@@ -5,7 +5,7 @@ import About from './Pages/About'
 import Menu from './Components/Layouts/menu'
 import { BrowserRouter, Route, Routes, useLocation } from 'react-router-dom'
 import './App.css'
-import Homepage from './Pages/Homepage'
+import Home from './Pages/Home'
 
 function App() {
   return (
@@ -14,7 +14,7 @@ function App() {
         <> </>
 
         <Routes>
-          <Route path="/" element={<Homepage />} />
+          <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/menu" element={<Menu />} />

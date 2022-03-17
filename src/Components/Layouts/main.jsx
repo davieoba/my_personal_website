@@ -32,7 +32,7 @@ function Main() {
         </Link>
       </div>
       <h3 className={styles.small_intro}>
-        I love testing and trying out new things, I feel like if I know somthing
+        I love trying out new things, I feel like if I know somthing
         well enough I can <span className={styles.hack}>hack</span> it 😅
       </h3>
     </main>

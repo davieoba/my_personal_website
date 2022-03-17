@@ -35,7 +35,7 @@ header h1 {
 }
 
 #navbar_display_block {
-  display: flex;
+  /* display: flex; */
   font-family: 'Helvetica Neue';
   justify-content: space-around;
   /* gap: 10px; */
@@ -43,13 +43,13 @@ header h1 {
   padding: 5px;
 }
 
-#navbar_display_block a {
-  /* border-bottom: 2px solid #6583a8; */
+.navbar_display a{
+  /* background-color: tomato; */
   position: relative;
   text-decoration: none;
 }
 
-#navbar_display_block a::before {
+.navbar_display a::before{
   content: '';
   position: absolute;
   width: 100%;
@@ -63,21 +63,14 @@ header h1 {
   transition: transform 0.3s ease-in-out;
 }
 
-#navbar_display_block a:hover::before {
+.navbar_display a:hover::before{
   transform-origin: left;
   transform: scaleX(1);
 }
 
-/* .navbar_display{
-  display: none;
-} */
-
 @media screen and (max-width: 767px) {
   header {
-    /* background-color: tomato; */
     display: grid;
-    /* grid-template-columns: 80% 20%;
-    grid-template-rows: auto; */
     padding: 5px 5px ;
   }
 
@@ -119,6 +112,39 @@ header h1 {
   #header_nav {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 768px){
+  header{
+    /* background: tomato; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .nav_icon{
+    display: none;
+  }
+
+  #navbar{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 900px){
+  header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  #navbar{
+    display: flex;
+    gap: 20px;
     align-items: center;
   }
 }
