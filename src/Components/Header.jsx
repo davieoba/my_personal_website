@@ -37,23 +37,25 @@ function Header(props) {
         </div>
       </div>
 
-      <nav
-        id={clicked ? styles.navbar_display_block : styles.navbar}
-        className={styles.navbar_display}
-      >
-        <Link to="/about" className={styles.link_1}>
-          About
-        </Link>
-        <Link to="/contact" className={styles.link_2}>
-          Contact
-        </Link>
-        <Link to="/projects" className={styles.link_3}>
-          Projects
-        </Link>
-        <Link to="/blog" className={styles.link_4}>
-          Blog
-        </Link>
-      </nav>
+      <div id={styles.testing}>
+        <nav
+          id={clicked ? styles.navbar_display_block : styles.navbar}
+          className={styles.navbar_display}
+        >
+          <Link to="/about" className={styles.link_1}>
+            About
+          </Link>
+          <Link to="/contact" className={styles.link_2}>
+            Contact
+          </Link>
+          <Link to="/projects" className={styles.link_3}>
+            Projects
+          </Link>
+          <Link to="/blog" className={styles.link_4}>
+            Blog
+          </Link>
+        </nav>
+      </div>
     </header>
   )
 }
