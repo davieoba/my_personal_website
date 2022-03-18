@@ -14,7 +14,7 @@ function Home() {
       </div>
       <div id={styles.wrapper}>
         <section id={styles.skills_section}>
-          <h1 id={styles.skills_header}>
+          <h1 id={styles.skills_header} className={styles.section_headers}>
             {' '}
             <span className={styles.skills_header}>My</span>{' '}
             <span className={styles.skills_highlight}>Skills</span>{' '}
@@ -28,7 +28,7 @@ function Home() {
               />
             </div>
             <div id={styles.skills_stack}>
-              <ul id={styles.skills_list}>
+              <ul id={styles.skills_list} className={styles.skills_list}>
                 <li>React</li>
                 <li>HTML</li>
                 <li>CSS</li>
@@ -65,11 +65,152 @@ function Home() {
         </section>
 
         <section id={styles.project_section}>
-          <h2>Projects</h2>
+          <h2 className={styles.section_headers}>
+            My
+            <span className={styles.skills_highlight}> Projects</span>
+          </h2>
+
+          <div id={styles.section_projects}>
+            <div id={styles.project_1} className={styles.project}>
+              <div className={styles.project_text}>
+                <div className={styles.project_stack}>
+                  FULL STACK DEVELOPER / TECH LEAD
+                </div>
+
+                <h2 className={styles.project_name}> Movies </h2>
+
+                <ul id={styles.project_1_stack} className={styles.skills_list}>
+                  <li>React</li>
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>Express</li>
+                  <li>MongoDB</li>
+                  <li>Mongoose</li>
+                  <li>Redux toolkit</li>
+                  <li>Tailwind css</li>
+                </ul>
+                <div className={styles.project_desc}>
+                  <div>I built this app from scratch</div>
+                </div>
+                <div className={styles.view_project}>
+                  <Link to="/"> View Project </Link>
+                </div>
+              </div>
+
+              <div className={styles.project_img}>
+                <img src={profile} alt="project picture" />
+              </div>
+            </div>
+
+            <hr />
+            <div id={styles.project_2} className={styles.project}>
+              <div className={styles.project_text}>
+                <div className={styles.project_stack}>
+                  FULL STACK DEVELOPER / TECH LEAD
+                </div>
+
+                <h2 className={styles.project_name}> Blog </h2>
+
+                <ul id={styles.project_1_stack} className={styles.skills_list}>
+                  <li>React</li>
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>Express</li>
+                  <li>MongoDB</li>
+                  <li>Mongoose</li>
+                  <li>Redux toolkit</li>
+                  <li>Tailwind css</li>
+                </ul>
+                <div className={styles.project_desc}>
+                  <div>I built this app from scratch</div>
+                </div>
+                <div className={styles.view_project}>
+                  <Link to="/"> View Project </Link>
+                </div>
+              </div>
+
+              <div className={styles.project_img}>
+                <img src={profile} alt="project picture" />
+              </div>
+            </div>
+            <hr />
+
+            <div id={styles.project_2} className={styles.project}>
+              <div className={styles.project_text}>
+                <div className={styles.project_stack}>
+                  FULL STACK DEVELOPER / TECH LEAD
+                </div>
+
+                <h2 className={styles.project_name}> Web Scraping </h2>
+
+                <ul id={styles.project_1_stack} className={styles.skills_list}>
+                  <li>React</li>
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>Express</li>
+                  <li>MongoDB</li>
+                  <li>Mongoose</li>
+                  <li>Redux toolkit</li>
+                  <li>Tailwind css</li>
+                </ul>
+                <div className={styles.project_desc}>
+                  <div>I built this app from scratch</div>
+                </div>
+                <div className={styles.view_project}>
+                  <Link to="/"> View Project </Link>
+                </div>
+              </div>
+
+              <div className={styles.project_img}>
+                <img src={profile} alt="project picture" />
+              </div>
+            </div>
+
+            <hr />
+
+            <div id={styles.project_2} className={styles.project}>
+              <div className={styles.project_text}>
+                <div className={styles.project_stack}>
+                  FULL STACK DEVELOPER / TECH LEAD
+                </div>
+
+                <h2 className={styles.project_name}> Github Finder </h2>
+
+                <ul id={styles.project_1_stack} className={styles.skills_list}>
+                  <li>React</li>
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>Redux toolkit</li>
+                  <li>Tailwind css</li>
+                </ul>
+                <div className={styles.project_desc}>
+                  <div>I built this app from scratch</div>
+                </div>
+                <div className={styles.view_project}>
+                  <Link to="/"> View Project </Link>
+                </div>
+              </div>
+
+              <div className={styles.project_img}>
+                <img src={profile} alt="project picture" />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id={styles.contact_section}>
+          <div className={styles.contact_section_div}>
+            <h2 id={styles.contact_section_header}>
+              Let's have a <span className={styles.skills_highlight}> chat </span>
+            </h2>
+            <h3 id={styles.contact_section_link}>
+              <Link to='/' className={styles.contact_link}> bodunrindavidbond@gmail.com</Link>
+            </h3>
+          </div>
         </section>
       </div>
 
-      {/* <Footer /> */}
+      <Footer />
     </>
   )
 }
