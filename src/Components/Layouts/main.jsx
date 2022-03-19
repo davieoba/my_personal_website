@@ -7,8 +7,6 @@ import { FaTwitter } from 'react-icons/fa'
 import { FaGithub } from 'react-icons/fa'
 
 function Main() {
-  let navigate = useNavigate()
-
   return (
     <main className={styles['main-section']}>
       <h1 className={styles.intro}>
@@ -21,19 +19,30 @@ function Main() {
       </h1>
 
       <div className={styles.social_media}>
-        <Link to={ "https://github.com/davieoba"}>
+        <a
+          href="https://www.github.com/davieoba"
+          // onClick={handleGit}
+          className={styles.link}
+        >
           <FaGithub size={30} />
-        </Link>
-        <Link to="www.twitter.com/bodunrindavid">
+        </a>
+        <a
+          href="https://www.twitter.com/bodunrindavid"
+          // onClick={handleTwitter}
+          className={styles.link}
+        >
           <FaTwitter size={30} />
-        </Link>
-        <Link to="/">
+        </a>
+        <a
+          href="https://www.linkedin.com/in/david-bodunrin-oluwaseun"
+          // onClick={handleLink}
+        >
           <BsLinkedin size={30} />
-        </Link>
+        </a>
       </div>
       <h3 className={styles.small_intro}>
-        I love trying out new things, I feel like if I know somthing
-        well enough I can <span className={styles.hack}>hack</span> it 😅
+        I love trying out new things, I feel like if I know somthing well enough
+        I can <span className={styles.hack}>hack</span> it 😅
       </h3>
     </main>
   )

@@ -5,7 +5,9 @@ import { Link, useLocation, useNavigate } from 'react-router-dom'
 import { CgMenu } from 'react-icons/cg'
 
 function Header(props) {
+  const navigate = useNavigate()
   const [clicked, setClicked] = useState(false)
+
   const handleClick = () => {
     setClicked((prev) => !prev)
   }
@@ -14,7 +16,9 @@ function Header(props) {
     setClicked((prev) => !prev)
   }
 
-  console.log(clicked)
+  // const handle_projects = () => {
+  //   props.refProp.current.scrollIntoView()
+  // }
 
   return (
     <header>
@@ -45,12 +49,20 @@ function Header(props) {
           <Link to="/about" className={styles.link_1}>
             About
           </Link>
-          <Link to="/contact" className={styles.link_2}>
+          <a href="/#contact_section" className={styles.link_2}>
             Contact
-          </Link>
-          <Link to="/projects" className={styles.link_3}>
+          </a>
+          <a
+            href="/#all_projects"
+            className={styles.link_3}
+            // onClick={handle_projects}
+          >
             Projects
-          </Link>
+          </a>
+
+          {/* <li>
+                <a href="/#all_projects"> Projects </a>
+              </li> */}
           <Link to="/blog" className={styles.link_4}>
             Blog
           </Link>
@@ -59,5 +71,7 @@ function Header(props) {
     </header>
   )
 }
+
+// http://localhost:3000/#all_project
 
 export default Header

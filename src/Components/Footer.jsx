@@ -21,10 +21,10 @@ function Footer() {
                 <Link to="/blog"> Blog </Link>
               </li>
               <li>
-                <Link to="/projecs"> Projects </Link>
+                <a href="/#all_projects"> Projects </a>
               </li>
               <li>
-                <Link to="/contact"> Contact </Link>
+                <a href="/#contact_section"> Contact </a>
               </li>
             </ul>
           </div>
@@ -33,13 +33,28 @@ function Footer() {
         <div className={styles.icons}>
           <h4>Get in touch </h4>
           <div id={styles.social}>
-            <FaGithub size={24} fill="#fafaff" style={{ cursor: 'pointer' }} />
-            <FaLinkedin
-              size={24}
-              fill="#fafaff"
-              style={{ cursor: 'pointer' }}
-            />
-            <FaTwitter size={24} fill="#fafaff" style={{ cursor: 'pointer' }} />
+            <a href="https://www.github.com/davieoba">
+              <FaGithub
+                size={24}
+                fill="#fafaff"
+                style={{ cursor: 'pointer' }}
+              />
+            </a>
+            <a href="https://www.linkedin.com/in/david-bodunrin-oluwaseun">
+              <FaLinkedin
+                size={24}
+                fill="#fafaff"
+                style={{ cursor: 'pointer' }}
+              />
+            </a>
+
+            <a href="https://www.twitter.com/bodunrindavid">
+              <FaTwitter
+                size={24}
+                fill="#fafaff"
+                style={{ cursor: 'pointer' }}
+              />
+            </a>
           </div>
         </div>
       </div>

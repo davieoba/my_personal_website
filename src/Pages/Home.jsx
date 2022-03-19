@@ -4,12 +4,22 @@ import Header from '../Components/Header'
 import styles from './home.module.css'
 import profile from './../images/me.jpg'
 import { Link } from 'react-router-dom'
+import { useRef, useEffect } from 'react'
 
 function Home() {
+  const myRef = useRef(null)
+
+  useEffect(() => {
+    console.log(window.location.href)
+    if(window.location.href === 'http://localhost:3000/#all_project'){
+      myRef.current.scrollIntoView()
+    }
+  }, [])
+
   return (
     <>
       <div className="hero_page">
-        <Header />
+        <Header refProp={myRef} />
         <Main />
       </div>
       <div id={styles.wrapper}>
@@ -65,7 +75,7 @@ function Home() {
         </section>
 
         <section id={styles.project_section}>
-          <h2 className={styles.section_headers}>
+          <h2 className={styles.section_headers} id="all_projects" ref={myRef}>
             My
             <span className={styles.skills_highlight}> Projects</span>
           </h2>
@@ -198,13 +208,21 @@ function Home() {
           </div>
         </section>
 
-        <section id={styles.contact_section}>
+        <section className={styles.contact_section} id="contact_section">
           <div className={styles.contact_section_div}>
             <h2 id={styles.contact_section_header}>
-              Let's have a <span className={styles.skills_highlight}> chat </span>
+              Let's have a{' '}
+              <span className={styles.skills_highlight}> chat </span>{' '}
+              <span className={styles.coffee} >☕</span>
             </h2>
             <h3 id={styles.contact_section_link}>
-              <Link to='/' className={styles.contact_link}> bodunrindavidbond@gmail.com</Link>
+              <a
+                href="mailto:bodunrindavidbond@gmail.com"
+                className={styles.contact_link}
+              >
+                {' '}
+                bodunrindavidbond@gmail.com
+              </a>
             </h3>
           </div>
         </section>
