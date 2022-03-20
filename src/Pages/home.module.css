@@ -128,6 +128,10 @@
   margin-bottom: 30px;
 }
 
+.view_project_link{
+  color: #fafaff;
+}
+
 .project_img img {
   max-width: 100%;
   width: 400px;

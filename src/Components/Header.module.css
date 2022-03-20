@@ -18,9 +18,12 @@ header h1 {
   line-height: 25px;
   letter-spacing: 0em;
   margin-right: auto;
-  color: #273469;
+  color: #1f2937;
 }
 
+.header_link{
+  color: #1f2937;
+}
 .nav_icon {
   position: relative;
   width: 30px;

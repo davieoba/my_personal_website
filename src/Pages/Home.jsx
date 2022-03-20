@@ -104,7 +104,10 @@ function Home() {
                   <div>I built this app from scratch</div>
                 </div>
                 <div className={styles.view_project}>
-                  <Link to="/"> View Project </Link>
+                  <Link to="/" className={styles.view_project_link}>
+                    {' '}
+                    View Project{' '}
+                  </Link>
                 </div>
               </div>
 
@@ -136,7 +139,10 @@ function Home() {
                   <div>I built this app from scratch</div>
                 </div>
                 <div className={styles.view_project}>
-                  <Link to="/"> View Project </Link>
+                  <Link to="/" className={styles.view_project_link}>
+                    {' '}
+                    View Project{' '}
+                  </Link>
                 </div>
               </div>
 
@@ -168,7 +174,10 @@ function Home() {
                   <div>I built this app from scratch</div>
                 </div>
                 <div className={styles.view_project}>
-                  <Link to="/"> View Project </Link>
+                  <Link to="/" className={styles.view_project_link}>
+                    {' '}
+                    View Project{' '}
+                  </Link>
                 </div>
               </div>
 
@@ -198,7 +207,10 @@ function Home() {
                   <div>I built this app from scratch</div>
                 </div>
                 <div className={styles.view_project}>
-                  <Link to="/"> View Project </Link>
+                  <Link to="/" className={styles.view_project_link}>
+                    {' '}
+                    View Project{' '}
+                  </Link>
                 </div>
               </div>
 

@@ -24,7 +24,7 @@ function Header(props) {
     <header>
       <div id={styles.header_nav}>
         <h1>
-          <Link to="/">David Bodunrin</Link>
+          <Link to="/" className={styles.header_link}>David Bodunrin</Link>
         </h1>
 
         <div className={styles.nav_icon}>
