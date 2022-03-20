@@ -9,12 +9,12 @@ import { useRef, useEffect } from 'react'
 function Home() {
   const myRef = useRef(null)
 
-  useEffect(() => {
-    console.log(window.location.href)
-    if(window.location.href === 'http://localhost:3000/#all_project'){
-      myRef.current.scrollIntoView()
-    }
-  }, [])
+  // useEffect(() => {
+  //   console.log(window.location.href)
+  //   if(window.location.href === 'http://localhost:3000/#all_project'){
+  //     myRef.current.scrollIntoView()
+  //   }
+  // }, [])
 
   return (
     <>
@@ -40,6 +40,7 @@ function Home() {
             <div id={styles.skills_stack}>
               <ul id={styles.skills_list} className={styles.skills_list}>
                 <li>React</li>
+                <li>Redux toolkit</li>
                 <li>HTML</li>
                 <li>CSS</li>
                 <li>SCSS</li>
@@ -103,7 +104,10 @@ function Home() {
                   <div>I built this app from scratch</div>
                 </div>
                 <div className={styles.view_project}>
-                  <Link to="/"> View Project </Link>
+                  <Link to="/" className={styles.view_project_link}>
+                    {' '}
+                    View Project{' '}
+                  </Link>
                 </div>
               </div>
 
@@ -135,7 +139,10 @@ function Home() {
                   <div>I built this app from scratch</div>
                 </div>
                 <div className={styles.view_project}>
-                  <Link to="/"> View Project </Link>
+                  <Link to="/" className={styles.view_project_link}>
+                    {' '}
+                    View Project{' '}
+                  </Link>
                 </div>
               </div>
 
@@ -167,7 +174,10 @@ function Home() {
                   <div>I built this app from scratch</div>
                 </div>
                 <div className={styles.view_project}>
-                  <Link to="/"> View Project </Link>
+                  <Link to="/" className={styles.view_project_link}>
+                    {' '}
+                    View Project{' '}
+                  </Link>
                 </div>
               </div>
 
@@ -197,7 +207,10 @@ function Home() {
                   <div>I built this app from scratch</div>
                 </div>
                 <div className={styles.view_project}>
-                  <Link to="/"> View Project </Link>
+                  <Link to="/" className={styles.view_project_link}>
+                    {' '}
+                    View Project{' '}
+                  </Link>
                 </div>
               </div>
 
@@ -213,7 +226,7 @@ function Home() {
             <h2 id={styles.contact_section_header}>
               Let's have a{' '}
               <span className={styles.skills_highlight}> chat </span>{' '}
-              <span className={styles.coffee} >☕</span>
+              <span className={styles.coffee}>☕</span>
             </h2>
             <h3 id={styles.contact_section_link}>
               <a

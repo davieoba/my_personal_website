@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom'
 import { BsLinkedin } from 'react-icons/bs'
 import { FaTwitter } from 'react-icons/fa'
 import { FaGithub } from 'react-icons/fa'
+import logo from './../../images/programming.svg'
 
 function Main() {
   return (
@@ -24,26 +25,33 @@ function Main() {
           // onClick={handleGit}
           className={styles.link}
         >
-          <FaGithub size={30} />
+          <FaGithub size={30} fill="#1f2937" />
         </a>
         <a
           href="https://www.twitter.com/bodunrindavid"
           // onClick={handleTwitter}
           className={styles.link}
         >
-          <FaTwitter size={30} />
+          <FaTwitter size={30} fill="#1f2937" />
         </a>
         <a
           href="https://www.linkedin.com/in/david-bodunrin-oluwaseun"
           // onClick={handleLink}
         >
-          <BsLinkedin size={30} />
+          <BsLinkedin size={30} fill="#1f2937" />
         </a>
       </div>
+
+      {/* <div id={styles.wrapper}> */}
       <h3 className={styles.small_intro}>
-        I love trying out new things, I feel like if I know somthing well enough
-        I can <span className={styles.hack}>hack</span> it 😅
+        I love trying out new things, so that I can achieve my childhood dream a
+        -<span className={styles.hack}>hacker 😅</span>
       </h3>
+
+      {/* <div id={styles.image}> */}
+      {/* <img src={logo} alt="me" /> */}
+      {/* </div> */}
+      {/* </div> */}
     </main>
   )
 }
