@@ -1,0 +1,50 @@
+#not_found {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#header {
+  background-color: #e4d9ff;
+  padding: 5px;
+}
+
+#wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 50px;
+  min-height: 300px;
+}
+
+#image {
+  width: 50%;
+}
+
+#image img {
+  max-width: 100%;
+}
+
+#link {
+  display: block;
+  margin-top: 40px;
+  font-family: montserrat;
+  font-weight: 600;
+  font-size: 23px;
+  background-color: #1f2937;
+  padding: 8px 12px;
+  width: fit-content;
+  color: #fafaff;
+  margin-bottom: 30px;
+}
+
+#footer {
+  height: fit-content;
+}
+
+@media screen and (max-width: 767px) {
+  #image {
+    width: 50%;
+  }
+}

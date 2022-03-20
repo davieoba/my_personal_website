@@ -11,7 +11,6 @@
     font-size: 40px;
     justify-content: flex-start;
     align-items: center;
-
 }
 
 .small_intro{
@@ -24,19 +23,59 @@
 .hack{
     text-decoration: line-through;
     font-size: 24px;
+    display: block;
 }
 
 .social_media{
     display: flex;
     column-gap: 15px;
-    margin: 15px 0;
+    margin: 65px 0;
 }
 
 .link{
     cursor: pointer;
 }
-/* @media screen and (max-width: 768px){
+
+#wrapper{
+    display: flex;
+    align-items: center;
+}
+
+@media screen and (max-width: 768px){
+    .main-section{
+        padding: 20px 50px;
+        margin-top: 80px;
+    }
+
+    #wrapper{
+        margin-top: 0;
+    }
+
+    .social_media{
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+}
+
+@media screen and (max-width: 550px){
     .main-section{
         margin-top: 50px;
+        padding: 10px 40px;
     }
-} */
+
+    .intro{
+        font-size: 20px;
+    }
+
+    .small_intro{
+        font-size: 14px;
+    }
+
+    .social_media{
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    
+} 
+
+ 
